@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>traffic light</title>
+</head>
+    <style> 
+        body { 
+            display: flex; 
+            justify-content: center; 
+            align-items: center; 
+            height: 100vh; 
+            margin: 0; 
+            background-color: #f0f0f0; 
+        } 
+  
+        .traffic-signal { 
+            width: 100px; 
+            height: 300px; 
+            background-color: none
+            border-radius: 10px; 
+            display: flex; 
+            flex-direction: column; 
+            justify-content: space-between; 
+            align-items: center; 
+        } 
+  
+  .light { 
+      width: 60px; 
+      height: 60px; 
+      border-radius: 50%; 
+      margin: 10px; 
+      transition: background-color 0.9s; 
+  } 
+
+
+      0%, 
+      49% { 
+          background-color: red; 
+      } 
+
+      50%, 
+      100% { 
+          background-color: black; 
+      } 
+  } 
+
+  @keyframes blinkYellow { 
+    0%, 
+            49% { 
+                background-color: yellow; 
+            } 
+  
+            50%, 
+            100% { 
+                background-color: black; 
+            } 
+        } 
+  
+        @keyframes blinkGreen { 
+  
+            0%, 
+            49% { 
+                background-color: green; 
+            } 
+  
+            50%, 
+            100% { 
+                background-color: black; 
+            } 
+        } 
+  
+        .red { 
+            background-color: red;  
+        } 
+  
+        .yellow { 
+            background-color: yellow; 
+        } 
+  
+        .green { 
+            background-color: green; 
+        } 
+    </style> 
+</head> 
+  
+<body> 
+    <div class="traffic-signal"> 
+        <div class="light red"></div> 
+        <div class="light yellow"></div> 
+        <div class="light green"></div> 
+    </div> 
+</body>
+</html>

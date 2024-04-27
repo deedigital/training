@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+</head>
+<body>
+    <!-- First Name, Last Name
+    email 
+    gender 
+    home address 
+    country
+    phone call /fax 
+    submit button 
+    reset button  -->
+    <form action="submit.html" method="post">
+        <div>
+        <label for="first_name"> First Name: </label>
+        <input type="text" placeholder="First Name" name="first_name" required>
+    </div>
+    <vid>
+        <label for="last_name">Last Name: </label>
+        <input type="text" name="last_name" placeholder="Last Name" required>
+    </vid>
+        <br>
+
+        <label for="email">Email: </label>
+        <input type="email" name="email" placeholder="Email" required>
+        <br>
+    <div>
+        <label>sex:</label>
+        <input type="radio" name="gender" value="Male"> male
+        <input type="radio" name="gender" value="female"> female
+    </div>
+    <br>
+    <vid>
+        <label for="address">Home Address:</label><br>
+        <textarea name="address" id="" cols="50" rows="5"> 
+        </textarea>
+    </vid>
+        <br>
+    <vid>
+        <label for="country">Country: </label>
+        <select name="country" id="country">
+            <option value="nigeria">Nigeria</option>
+            <option value="ghana">Ghana</option>
+            <option value="united_kingdom">United Kingdom</option>
+            <option value="united_states">United States of America</option>
+            <option value="canada">Canada</option>
+        </select>
+    </vid>
+        <br>
+        <span>How do you want your Feedback: </span>
+        <input type="checkbox" name="call" id="" value="Phone Call">
+        <label for="call">Phone Call</label>
+        <input type="checkbox" name="fax" id="">
+        <label for="fax">Fax</label>
+        <br>
+        <input type="submit" name="Submit">
+        <button type="reset">Reset</button>
+    </form>
+</body>
+</html>
